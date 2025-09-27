@@ -20,6 +20,7 @@ curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
 
 echo "Installing Node.js (LTS)..."
 sudo apt install -y nodejs
+npm install -g npm@11.6.1
 
 echo "Installing pm2 globally..."
 sudo npm install -g pm2
@@ -30,4 +31,5 @@ echo -n "npm version: "; npm -v
 echo -n "Nginx version: "; nginx -v
 
 echo "Installation complete!"
+
 
